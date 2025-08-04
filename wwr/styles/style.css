@@ -346,3 +346,49 @@ footer .social img {
         margin: 0 10px;
     }
 }
+
+/* Header (uses CSS Grid) */
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr; /* Example layout */
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+    background-color: #f0f0f0; /* Use a color for contrast check */
+}
+
+/* Nav (uses CSS Flexbox) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* You may need to adjust the nav's placement in the grid */
+    grid-column: 3 / 4; 
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    /* Add other styling for links */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.social-icons {
+    /* This div is nested in the footer and will contain the icons */
+    display: flex;
+    gap: 10px;
+    /* Aligned to the right naturally by justify-content: space-between on the footer */
+}
+
+.social-icons img {
+    width: 24px; /* Set a consistent size for icons */
+    height: 24px;
+}
+
