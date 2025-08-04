@@ -294,6 +294,151 @@ main {
     color: var(--secondary-color); 
 }
 
+/* ---- New CSS for Contact Us Page ---- */
+
+.contact-main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.map-container {
+    height: 450px;
+    margin-top: 20px;
+    overflow: hidden; /* Prevents scrollbars from appearing */
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.employee-profiles {
+    margin-bottom: 40px;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.employee-grid figure {
+    margin: 0;
+    text-align: center;
+    background-color: var(--accent1-color);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.employee-grid img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the images circular */
+    border: 3px solid var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.employee-grid figcaption {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.contact-form-section {
+    background-color: var(--accent2-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.form-group input:not([type="radio"]),
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    box-sizing: border-box; /* ensures padding doesn't affect width */
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.radio-group input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox-group label {
+    margin-left: 10px;
+}
+
+.contact-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    align-self: flex-start; /* Aligns the button to the left */
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--primary-color);
+}
+
+
 /* Footer Styles */
 footer {
     background-color: var(--primary-color); 
@@ -391,4 +536,3 @@ footer {
     width: 24px; /* Set a consistent size for icons */
     height: 24px;
 }
-
