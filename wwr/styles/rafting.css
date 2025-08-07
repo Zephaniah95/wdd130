@@ -536,3 +536,78 @@ footer {
     width: 24px; /* Set a consistent size for icons */
     height: 24px;
 }
+
+.cta {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 2rem;
+}
+
+.cta h1 {
+    font-size: 2.5rem;
+    color: #003366;
+}
+
+.cta .contact-link {
+    color: #0066cc;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #e9f3f7;
+}
+
+.trip-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.trip-card h2 {
+    margin-top: 1rem;
+    color: #003366;
+}
+
+.trips-table {
+    padding: 2rem;
+    background-color: #fdfdfd;
+}
+
+.trips-table h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #003366;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.trips-table th {
+    background-color: #003366;
+    color: white;
+}
